@@ -123,7 +123,7 @@ export default function App() {
       />
       <div className="countryCard" style={containerStyle}>
         {filteredCountries.map(country => (
-          <div key={country.cca3} className="countryCard" style={cardStyle}>
+          <div key={country.cca3} style={cardStyle}>
             <img src={country.flags.png} alt={`Flag of ${country.name.common}`} style={imageStyle}/>
             <h2>{country.name.common}</h2>
           </div>
