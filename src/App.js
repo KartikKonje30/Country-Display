@@ -116,6 +116,7 @@ export default function App() {
         placeholder="Search for countries..."
         value={searchTerm}
         onChange={handleSearch}
+        style={`justify-content: center`}
       />
       <div className="countryCard" style={containerStyle}>
         {filteredCountries.map(country => (
