@@ -93,7 +93,7 @@ export default function App() {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
     height: "100vh",
   };
 
