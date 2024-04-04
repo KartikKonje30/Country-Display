@@ -113,7 +113,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className="countryCard">
       <input
         type="text"
         placeholder="Search for countries..."
@@ -121,7 +121,7 @@ export default function App() {
         onChange={handleSearch}
         style={{ marginBottom: "20px" , width: "300px", height: "30px", alignItems: "center", borderRadius: "10px", padding: "10px"}}
       />
-      <div style={containerStyle}>
+      <div className="countryCard" style={containerStyle}>
         {filteredCountries.map(country => (
           <div key={country.cca3} className="countryCard" style={cardStyle}>
             <img src={country.flags.png} alt={`Flag of ${country.name.common}`} style={imageStyle}/>
