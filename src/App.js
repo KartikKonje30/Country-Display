@@ -113,7 +113,7 @@ export default function App() {
   }
 
   return (
-    <div className="countryCard">
+    <div >
       <input
         type="text"
         placeholder="Search for countries..."
