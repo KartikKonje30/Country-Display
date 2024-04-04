@@ -82,6 +82,8 @@ export default function App() {
     setSearchTerm(term);
     const filtered = countries.filter(country => country.name.common.toLowerCase().includes(term));
     setFilteredCountries(filtered);
+    console.log(term);
+    console.log(filtered)
   };
 
     const imageStyle = {
@@ -93,6 +95,7 @@ export default function App() {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
+    flexDirection: "row",
     alignItems: "flex-start",
     height: "100vh",
   };
@@ -120,7 +123,7 @@ export default function App() {
       />
       <div className="countryCard" style={containerStyle}>
         {filteredCountries.map(country => (
-          <div key={country.name.common} className="countryCard" style={cardStyle}>
+          <div key={country.cca3} style={cardStyle}>
             <img src={country.flags.png} alt={`Flag of ${country.name.common}`} style={imageStyle}/>
             <h2>{country.name.common}</h2>
           </div>
